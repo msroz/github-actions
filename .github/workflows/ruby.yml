@@ -53,3 +53,7 @@ jobs:
           token2: ${{ secrets.GITHUB_TOKEN }}
         run: |
           [ "$TOKEN1" == "$TOKEN2" ] && echo "same" || echo "different"
+          echo "1: $TOKEN1"
+          echo "2: $TOKEN2"
+          echo "3: $token1"
+          echo "4: $token2"
